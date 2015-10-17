@@ -1,0 +1,2 @@
+class StateTransactionNotPermittedError < StandardError
+end
