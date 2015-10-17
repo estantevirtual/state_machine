@@ -41,4 +41,21 @@ class Entity
     end
   end
 end
+
+entity = Entity.new
+puts entity.status # :created
+
+entity.event_without_param
+puts entity.status # :second_state
+
+entity.event_with_param(:any)
+puts entity.status # :third_state
+
+entity.event_with_param(:any) # raises StateTransactionNotPermittedError
+
+entity.event_with_param(:expected)
+puts entity.status # :fourth_state
+
+entity.status = :created
+puts entity.status # :created
 ```
