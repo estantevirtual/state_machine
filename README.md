@@ -1,5 +1,7 @@
 # State Machine
 
+[![Build Status](https://travis-ci.org/estantevirtual/state_machine.svg?branch=master)](https://travis-ci.org/estantevirtual/state_machine)
+
 ```ruby
 class Entity
   include StateMachine
