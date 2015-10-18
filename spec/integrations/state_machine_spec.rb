@@ -1,8 +1,13 @@
+require 'byebug'
 require 'spec_helper'
 require_relative '../../lib/state_machine'
 require_relative '../../lib/state_machine/event'
 require_relative '../../lib/state_machine/rule'
 require_relative '../../lib/state_machine/state_template'
+require_relative '../../lib/state_machine/state_notifier_factory'
+require_relative '../../lib/state_machine/notifiers/call_event_method_notifier'
+require_relative '../../lib/state_machine/notifiers/change_state_value_notifier'
+require_relative '../../lib/state_machine/notifiers/retrieve_state_value_notifier'
 require_relative '../../lib/state_machine/state_transaction_not_permitted_error'
 require_relative 'shared_contexts/entity'
 
